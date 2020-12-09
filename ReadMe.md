@@ -593,3 +593,59 @@ X_clean
 ## Methods and Results
 
 ### Machine Learning Models:
+
+For this project the four machine learning models used were Linear Regression, Lasso Regression, K Nearest Neighbors, and Decision Tree Regression. These four models were chosen because Linear Regression allow for basic unweighted regression. Lasso regression was used because it has weights on each variable. K Nearest Neighbors was used beacuse of its ability to use values close to eachother to find the predicted value. Decision Tree Regression was used because the predictor variables can be split to make an accurate regression model. 
+
+To create the models the data was split into training and testing data. The machine leanring models were fit on the training data and then the training and testing data were used as preictors to see how well the model predicted home prices. 20% of the data was training data and the other 80% was testing data.
+
+```python
+X_train, X_test, y_train, y_test = train_test_split(X_clean,y, test_size=.2, random_state=42)
+```
+
+The two steps that were used to improve the model was introducing additional polynomial features and using a standard scaler to transform the data.
+
+The two Explanation of Model evaulation metics used were r^2 and mse. The higher r^2 the better the model predicted the data. Also, the lower the mse the better the model represented the data.
+
+#### Linear Regression:
+
+```python
+          Origional Data                 Added Polynomial Features             Standared Scaler
+          
+MSE Training: 5600321159.9145355    MSE Training: 81.14440552575785     MSE Training: 5728882144.65625  
+MSE Testing: 4791021560.331575      MSE Testing: 1785485700055740.2     MSE Testing:  1.7362469560887756e+38
+r^2 Training: 0.8910820717250114    r^2 Training: 0.9999999984218618    r^2 Training: 0.8885817515263617
+r^2 Testing: 0.7344440246954169     r^2 Testing: -98964.61526595881     r^2 Testing:   -9.623641805566386e+27
+```
+
+#### Lasso Regression:
+
+```python
+          Origional Data                 Added Polynomial Features             Standared Scaler
+          
+MSE Training: 5678272064.038322    MSE Training: 398994343.39644694     MSE Training: 5605558479.719356
+MSE Testing:  4036891793.971036    MSE Testing:  25413352816.033394     MSE Testing:  4426826515.345859
+r^2 Training: 0.8895660424220679   r^2 Training: 0.9922401526563802     r^2 Training: 0.8909802136339188
+r^2 Testing: 0.7762438085390594    r^2 Testing: -0.4086072475019631     r^2 Testing:  0.754630569288129
+```
+
+#### K Nearest Neighbors Regression:
+
+```python
+          Origional Data                 Added Polynomial Features             Standared Scaler
+          
+MSE Training: 31990717279.330566    MSE Training: 33291732617.879875      MSE Training: 31371522027.783813
+MSE Testing:  9173943875.64425      MSE Testing:  25413352816.033394      MSE Testing:  10571846691.244501
+r^2 Training: 0.37782806546245684   r^2 Training: 0.35252524955556763     r^2 Training: 0.38987049340014535
+r^2 Testing: 0.49150810894751795    r^2 Testing:  0.36471929727067265     r^2 Testing:  0.4140253756925969
+```
+
+#### Decision Tree Regression:
+
+```python
+          Origional Data                 Added Polynomial Features             Standared Scaler
+          
+MSE Training: 11452806944.283335   MSE Training: 10110095308.092709     MSE Training: 11452806944.283335
+MSE Testing:  13816323024.66889    MSE Testing:  10498149273.08941      MSE Testing:  13771299413.55778
+r^2 Training: 0.7772599160502824   r^2 Training: 0.803373663013829      r^2 Training: 0.7772599160502824
+r^2 Testing: 0.23419106139752144   r^2 Testing:  0.41811026437638954    r^2 Testing:  0.23668662289933984
+```
