@@ -649,3 +649,6 @@ MSE Testing:  13816323024.66889    MSE Testing:  10498149273.08941      MSE Test
 r^2 Training: 0.7772599160502824   r^2 Training: 0.803373663013829      r^2 Training: 0.7772599160502824
 r^2 Testing: 0.23419106139752144   r^2 Testing:  0.41811026437638954    r^2 Testing:  0.23668662289933984
 ```
+
+#### Summary Of Model Performace:
+The two best models from the r^2 and mse results are linear regression and lasso regression under the original unaltered data. Lasso under the standard scaler also performed well. The best model is the Lasso regression under the original unaltered data. The r^2 was high at explaining 89% of the data for the training data and explained 78% of the data for the testing data. The mse was also lower for the testing data then the training so this looks good for the model.  
