@@ -651,4 +651,10 @@ r^2 Testing: 0.23419106139752144   r^2 Testing:  0.41811026437638954    r^2 Test
 ```
 
 #### Summary Of Model Performace:
-The two best models from the r^2 and mse results are linear regression and lasso regression under the original unaltered data. Lasso under the standard scaler also performed well. The best model is the Lasso regression under the original unaltered data. The r^2 was high at explaining 89% of the data for the training data and explained 78% of the data for the testing data. The mse was also lower for the testing data then the training so this looks good for the model.  
+The two best models from the r^2 and mse results are linear regression and lasso regression under the original unaltered data. Lasso under the standard scaler also performed well. The best model is the Lasso regression under the original unaltered data. The r^2 was high at explaining 89% of the data for the training data and explained 78% of the data for the testing data. The mse was also lower for the testing data then the training so this looks good for the model.
+
+Overall, under Lasso regression using the original unaltered data the features used created a model that was good at determining housing prices.
+
+## Conclusion
+
+Overall, for this data set the original data appeared to perform the best using the r^2 and mse evaluation metrics. Data transformations were not necessary for this data set. Some future features that would be interesting to add are adding amenities such as air conditions (central air or window units), garden house/external storage, quality of appliances, yard condition, etc. All of these features and other potential predictors would change the model and allow for more data analysis. However, the current Realter API does not provide this information so another API or dataset would need to be found.  
