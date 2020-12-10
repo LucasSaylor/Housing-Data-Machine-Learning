@@ -604,6 +604,14 @@ X_train, X_test, y_train, y_test = train_test_split(X_clean,y, test_size=.2, ran
 
 The two steps that were used to improve the model was introducing additional polynomial features and using a standard scaler to transform the data.
 
+```python
+        Standard Scaler                                             Polynomial Features
+        
+scaler = StandardScaler()                                   poly = PolynomialFeatures(2)
+X_scaler = pd.DataFrame(scaler.fit_transform(X_num))        X_poly = pd.DataFrame(poly.fit_transform(X_num))
+X_scaler_clean = X_scaler.join(X_cat)                       X_clean_poly = X_poly.join(X_cat)
+```
+
 The two Explanation of Model evaulation metics used were r^2 and mse. The higher r^2 the better the model predicted the data. Also, the lower the mse the better the model represented the data.
 
 #### Linear Regression:
