@@ -1,13 +1,13 @@
 ## Introduction 
 
-Houses are all around the world. Depending on where you live tiny apartments in one geographic region can cost as much as mansions in another region. Understanding housing prices and what factors influence these prices can be an extremely helpful asset when trying to evaluate the potential value of a home. Machine learning can be utilized by companies like real estate brokers or other large cooperation’s when buying and selling homes. This GitHub repository will evaluate how housing prices can be predicted through machine learning by using housing and property values. 
+Houses are all around the world. Depending on where you live tiny apartments in one geographic region can cost as much as mansions in another region. Understanding housing prices and what factors influence these prices can be an extremely helpful asset when trying to evaluate the potential value of a home. Machine learning can be utilized by companies like real estate brokers or other large cooperation’s when buying and selling homes. This GitHub repository will evaluate how housing prices can be predicted through machine learning by using housing and property features as well as by geographic location in the Vancouver Washington Area. 
 
 ```python
 ```
 
 ## Data
 
-The data being used to determine housing prices comes from Realitor.com through Rapid API. Rapid API provides Python Requests code where the user can input variables such as city, state, area radius, and other housing factors. When applied in Python the Python Request outputs a json file. For you to use this API you will need to create an account with Rapid API to obtain an API key.
+The data being used to determine housing prices comes from Realitor.com through Rapid API. Rapid API provides Python Requests code where the user can input variables such as city, state, area radius, and other housing factors. When applied in Python the Python Request outputs a json file. For you to use this API you will need to create a free or paid account with Rapid API to obtain an API key.
 
 ```python
 import requests
@@ -636,7 +636,7 @@ r^2 Testing: 0.6607781031362773    r^2 Testing: 0.10390433258309795     r^2 Test
 MSE Training: 28303747952.598625    MSE Training: 29564198618.996502     MSE Training: 20260761190.451874
 MSE Testing:  32745067779.4435      MSE Testing:  33119974642.387        MSE Testing:  20226741827.94225
 r^2 Training: 0.4004387844138757    r^2 Training: 0.3737385277907076     r^2 Training: 0.5708142035326385
-r^2 Testing: 0.08361153044190761    r^2 Testing:  0.0731195586837885     r^2 Testing:  0.4339436670981397
+r^2 Testing:  0.08361153044190761   r^2 Testing:  0.0731195586837885     r^2 Testing:  0.4339436670981397
 ```
 
 #### Decision Tree Regression:
@@ -647,13 +647,13 @@ r^2 Testing: 0.08361153044190761    r^2 Testing:  0.0731195586837885     r^2 Tes
 MSE Training: 10004675362.088022    MSE Training: 10135651402.517187      MSE Training: 10004675362.088022
 MSE Testing:  22251607651.870773    MSE Testing:  29453989728.833668      MSE Testing:  22243338901.870773
 r^2 Training: 0.7880699287004739    r^2 Training: 0.7852954497111937      r^2 Training: 0.7880699287004739
-r^2 Testing: 0.37727669954294596    r^2 Testing:  0.17571413344485154     r^2 Testing:  0.3775081049933392
+r^2 Testing:  0.37727669954294596   r^2 Testing:  0.17571413344485154     r^2 Testing:  0.3775081049933392
 ```
 
 #### Summary Of Model Performace:
 The two best models from the r^2 and mse results are linear regression and lasso regression under the original unaltered data. Lasso under the standard scaler also performed well. The best model is the Lasso regression under the original unaltered data. The r^2 was high at explaining 89% of the data for the training data and explained 66% of the data for the testing data. The mse was also lower for the testing data then the training so this looks good for the model.
 
-Overall, under Lasso regression using the original unaltered data the features used created a model that was good at determining housing prices.
+Overall, under Lasso regression using the original unaltered data the features used created a model that was good at determining housing prices and could be used by Real Estate or other corperations to evaluate housing prices in the Vancovuer Washington area using housing features and geographic location.
 
 ## Conclusion
 
