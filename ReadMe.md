@@ -622,7 +622,7 @@ The two Explanation of Model evaulation metics used were r^2 and mse. The higher
 MSE Training: 5122353784.9493885    MSE Training: 7581265325.248904     MSE Training: 5122457382.975  
 MSE Testing: 12075406712.23772      MSE Testing:  34749811198.71855     MSE Testing:  8.657152201424125e+32
 r^2 Training: 0.8914926508280869    r^2 Training: 0.8394052737573986    r^2 Training: 0.8914904563004126
-r^2 Testing: 0.6620631983157526     r^2 Testing: 0.02750769928723762    r^2 Testing:   -2.4227509651315645e+22
+r^2 Testing: 0.6620631983157526     r^2 Testing:  0.02750769928723762   r^2 Testing:  -2.4227509651315645e+22
 ```
 
 #### Lasso Regression:
@@ -633,7 +633,7 @@ r^2 Testing: 0.6620631983157526     r^2 Testing: 0.02750769928723762    r^2 Test
 MSE Training: 5175583663.522939    MSE Training: 6281078129.550999      MSE Training: 5176504163.138428
 MSE Testing:  12121326679.754602   MSE Testing:  32019950426.244427     MSE Testing:  12162778030.956032
 r^2 Training: 0.890365076813631    r^2 Training: 0.8669472733840091     r^2 Training: 0.8903455777752233
-r^2 Testing: 0.6607781031362773    r^2 Testing: 0.10390433258309795     r^2 Testing:  0.6596180646063696
+r^2 Testing:  0.6607781031362773   r^2 Testing:  0.10390433258309795   r^2 Testing:  0.6596180646063696
 ```
 
 #### K Nearest Neighbors Regression:
