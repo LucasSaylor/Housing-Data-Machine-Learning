@@ -270,6 +270,9 @@ X = buildings.drop(['price'], axis = 1)
 To clean the data the means of each numeric column was taken and were inserted for all the missing values. The only column that did not have the mean applied was the garage feature because either a home has a garage or it does not.
 
 ```python
+means = buildings.describe()
+means.loc['mean']
+
 X['year_built'].fillna(means.loc['mean'][0],inplace=True)
 X['beds'].fillna(means.loc['mean'][1],inplace=True)
 X['baths_full'].fillna(means.loc['mean'][2],inplace=True)
