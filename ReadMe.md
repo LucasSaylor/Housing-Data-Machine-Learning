@@ -259,6 +259,14 @@ buildings = df[['prop_type','year_built','beds','baths_full','garage','baths_hal
 
 ### Data Cleaning
 
+First the data will need to be seperated by the pridicted value (y) and the features (x).
+
+```python
+X = buildings.loc[:, buildings.columns != 'price']
+y = buildings['price']
+X = buildings.drop(['price'], axis = 1)
+```
+
 To clean the data the means of each numeric column was taken and were inserted for all the missing values. The only column that did not have the mean applied was the garage feature because either a home has a garage or it does not.
 
 ```python
