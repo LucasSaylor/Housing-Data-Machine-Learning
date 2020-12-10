@@ -590,6 +590,10 @@ X_clean
 <p>200 rows × 68 columns</p>
 </div>
 
+## Exploritory Data Analysis (EDA)
+
+![png](output_20_1.png)
+
 ## Methods and Results
 
 ### Machine Learning Models:
