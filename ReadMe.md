@@ -271,7 +271,9 @@ To clean the data the means of each numeric column was taken and were inserted f
 
 ```python
 means = buildings.describe()
-means.loc['mean']
+```
+
+```python
 
 X['year_built'].fillna(means.loc['mean'][0],inplace=True)
 X['beds'].fillna(means.loc['mean'][1],inplace=True)
