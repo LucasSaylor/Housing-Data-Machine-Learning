@@ -605,6 +605,29 @@ To create the models the data was split into training and testing data. The mach
 ```python
 X_train, X_test, y_train, y_test = train_test_split(X_clean,y, test_size=.2, random_state=42)
 ```
+Here are the four models with the fit and predicted code for the training and testing data.
+```python
+Linear Regression Training                                                 Lasso Regression Trainig                                             
+        
+lm = LinearRegression(fit_intercept=True, normalize=False)                 lasso = Lasso(alpha=152)
+lm.fit(X_train, y_train)                                                   lasso.fit(X_train, y_train)
+yhat_train = lm.predict(X_train)                                           lhat_train = lasso.predict(X_train)
+
+Linear Regression Testing                                                  Lasso Regression Testing
+     
+yhat_test = lm.predict(X_test)                                             lhat_test = lasso.predict(X_test)
+
+K Nearest Neighbors Training                                                Decision Tree Regression Training 
+
+knn = KNeighborsRegressor(n_neighbors=10)                                   regressor = DecisionTreeRegressor(min_samples_leaf=3)
+knn.fit(X_train, y_train)                                                   regressor.fit(X_train, y_train)
+yhat_knn_train = knn.predict(X_train)                                       rhat_train = regressor.predict(X_train)
+
+K Nearest Neighbors Testing                                                 Decision Tree Regression Testing 
+
+yhat_knn_test = knn.predict(X_test)                                         rhat_test = regressor.predict(X_test)
+
+```
 
 The two steps that were used to improve the model was introducing additional polynomial features and using a standard scaler to transform the data.
 
