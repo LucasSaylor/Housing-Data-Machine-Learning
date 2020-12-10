@@ -629,7 +629,7 @@ yhat_knn_test = knn.predict(X_test)                                         rhat
 
 ```
 
-The two steps that were used to improve the model was introducing additional polynomial features and using a standard scaler to transform the data.
+The two steps that were used to improve the model was introducing additional polynomial features and using a standard scaler to transform the data. After each transformation the data will need to be split into training and testing data. If the same random_state is set to the same number, the data will be the same as previous training and testing samples.
 
 ```python
         Standard Scaler                                             Polynomial Features
@@ -640,6 +640,17 @@ X_scaler_clean = X_scaler.join(X_cat)                       X_clean_poly = X_pol
 ```
 
 The two Explanation of Model evaulation metics used were r^2 and mse. The higher r^2 the better the model predicted the data. Also, the lower the mse the better the model represented the data.
+
+```python
+                MSE Calulations                                  r^2 Caclulations
+                
+mse_lm_train = mean_squared_error(y_train, yhat_train)       r2_score(y_train,yhat_train)
+mse_lm_test = mean_squared_error(y_test, yhat_test)          r2_score(y_test,yhat_test)
+```
+
+Each model can use this code to find the MSE and r^2 of the model. This code can also be used after the Polynomial Features and Standard Scaler.
+
+Here are the results for each model. 
 
 #### Linear Regression:
 
