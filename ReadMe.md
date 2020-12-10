@@ -611,10 +611,10 @@ The two Explanation of Model evaulation metics used were r^2 and mse. The higher
 ```python
           Origional Data                 Added Polynomial Features             Standared Scaler
           
-MSE Training: 5600321159.9145355    MSE Training: 81.14440552575785     MSE Training: 5728882144.65625  
-MSE Testing: 4791021560.331575      MSE Testing: 1785485700055740.2     MSE Testing:  1.7362469560887756e+38
-r^2 Training: 0.8910820717250114    r^2 Training: 0.9999999984218618    r^2 Training: 0.8885817515263617
-r^2 Testing: 0.7344440246954169     r^2 Testing: -98964.61526595881     r^2 Testing:   -9.623641805566386e+27
+MSE Training: 5122353784.9493885    MSE Training: 7581265325.248904     MSE Training: 5122457382.975  
+MSE Testing: 12075406712.23772      MSE Testing:  34749811198.71855     MSE Testing:  8.657152201424125e+32
+r^2 Training: 0.8914926508280869    r^2 Training: 0.8394052737573986    r^2 Training: 0.8914904563004126
+r^2 Testing: 0.6620631983157526     r^2 Testing: 0.02750769928723762    r^2 Testing:   -2.4227509651315645e+22
 ```
 
 #### Lasso Regression:
@@ -622,10 +622,10 @@ r^2 Testing: 0.7344440246954169     r^2 Testing: -98964.61526595881     r^2 Test
 ```python
           Origional Data                 Added Polynomial Features             Standared Scaler
           
-MSE Training: 5678272064.038322    MSE Training: 398994343.39644694     MSE Training: 5605558479.719356
-MSE Testing:  4036891793.971036    MSE Testing:  25413352816.033394     MSE Testing:  4426826515.345859
-r^2 Training: 0.8895660424220679   r^2 Training: 0.9922401526563802     r^2 Training: 0.8909802136339188
-r^2 Testing: 0.7762438085390594    r^2 Testing: -0.4086072475019631     r^2 Testing:  0.754630569288129
+MSE Training: 5175583663.522939    MSE Training: 6281078129.550999      MSE Training: 5176504163.138428
+MSE Testing:  12121326679.754602   MSE Testing:  32019950426.244427     MSE Testing:  12162778030.956032
+r^2 Training: 0.890365076813631    r^2 Training: 0.8669472733840091     r^2 Training: 0.8903455777752233
+r^2 Testing: 0.6607781031362773    r^2 Testing: 0.10390433258309795     r^2 Testing:  0.6596180646063696
 ```
 
 #### K Nearest Neighbors Regression:
@@ -633,10 +633,10 @@ r^2 Testing: 0.7762438085390594    r^2 Testing: -0.4086072475019631     r^2 Test
 ```python
           Origional Data                 Added Polynomial Features             Standared Scaler
           
-MSE Training: 31990717279.330566    MSE Training: 33291732617.879875      MSE Training: 31371522027.783813
-MSE Testing:  9173943875.64425      MSE Testing:  25413352816.033394      MSE Testing:  10571846691.244501
-r^2 Training: 0.37782806546245684   r^2 Training: 0.35252524955556763     r^2 Training: 0.38987049340014535
-r^2 Testing: 0.49150810894751795    r^2 Testing:  0.36471929727067265     r^2 Testing:  0.4140253756925969
+MSE Training: 28303747952.598625    MSE Training: 29564198618.996502     MSE Training: 20260761190.451874
+MSE Testing:  32745067779.4435      MSE Testing:  33119974642.387        MSE Testing:  20226741827.94225
+r^2 Training: 0.4004387844138757    r^2 Training: 0.3737385277907076     r^2 Training: 0.5708142035326385
+r^2 Testing: 0.08361153044190761    r^2 Testing:  0.0731195586837885     r^2 Testing:  0.4339436670981397
 ```
 
 #### Decision Tree Regression:
@@ -644,10 +644,10 @@ r^2 Testing: 0.49150810894751795    r^2 Testing:  0.36471929727067265     r^2 Te
 ```python
           Origional Data                 Added Polynomial Features             Standared Scaler
           
-MSE Training: 11452806944.283335   MSE Training: 10110095308.092709     MSE Training: 11452806944.283335
-MSE Testing:  13816323024.66889    MSE Testing:  10498149273.08941      MSE Testing:  13771299413.55778
-r^2 Training: 0.7772599160502824   r^2 Training: 0.803373663013829      r^2 Training: 0.7772599160502824
-r^2 Testing: 0.23419106139752144   r^2 Testing:  0.41811026437638954    r^2 Testing:  0.23668662289933984
+MSE Training: 10004675362.088022    MSE Training: 10135651402.517187      MSE Training: 10004675362.088022
+MSE Testing:  22251607651.870773    MSE Testing:  29453989728.833668      MSE Testing:  22243338901.870773
+r^2 Training: 0.7880699287004739    r^2 Training: 0.7852954497111937      r^2 Training: 0.7880699287004739
+r^2 Testing: 0.37727669954294596    r^2 Testing:  0.17571413344485154     r^2 Testing:  0.3775081049933392
 ```
 
 #### Summary Of Model Performace:
@@ -657,4 +657,4 @@ Overall, under Lasso regression using the original unaltered data the features u
 
 ## Conclusion
 
-Overall, for this data set the original data appeared to perform the best using the r^2 and mse evaluation metrics. Data transformations were not necessary for this data set. Some future features that would be interesting to add are adding amenities such as air conditions (central air or window units), garden house/external storage, quality of appliances, yard condition, etc. All of these features and other potential predictors would change the model and allow for more data analysis. However, the current Realter API does not provide this information so another API or dataset would need to be found.  
+Overall, for this data set the original data appeared to perform the best using the r^2 and mse evaluation metrics. Data transformations were not necessary for this data set. Some future features that would be interesting to add are adding amenities such as air conditions (central air or window units), garden house/external storage, quality of appliances, yard condition, etc. All of these features and other potential predictors would change the model and allow for more data analysis. However, the current Realter API does not provide this information so another API or dataset would need to be found. Another limitation was that the free API only provided 200 rows of housing data. The API would need to be upgraded to receive more data lines.  
