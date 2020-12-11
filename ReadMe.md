@@ -613,7 +613,7 @@ X_clean
 
 For this project the four machine learning models used were Linear Regression, Lasso Regression, K Nearest Neighbors, and Decision Tree Regression. These four models were chosen because Linear Regression allow for basic unweighted regression. Lasso regression was used because it has weights on each variable. K Nearest Neighbors was used beacuse of its ability to use values close to eachother to find the predicted value. Decision Tree Regression was used because the predictor variables can be split to make an accurate regression model. 
 
-To create the models the data was split into training and testing data. The machine leanring models were fit on the training data and then the training and testing data were used as preictors to see how well the model predicted home prices. 20% of the data was training data and the other 80% was testing data.
+To create the models the data was split into training and testing data. The machine leanring models were fit on the training data and then the training and testing data were used as predictors to see how well the model predicted home prices. 20% of the data was training data and the other 80% was testing data.
 
 ```python
 X_train, X_test, y_train, y_test = train_test_split(X_clean,y, test_size=.2, random_state=42)
