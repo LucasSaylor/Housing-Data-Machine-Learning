@@ -710,7 +710,7 @@ r^2 Testing:  0.37727669954294596   r^2 Testing:  0.17571413344485154     r^2 Te
 ```
 
 #### Summary Of Model Performace:
-The two best models from the r^2 and mse results are linear regression and lasso regression under the original unaltered data. Lasso under the standard scaler also performed well. The best model is the Lasso regression under the original unaltered data. The r^2 was high at explaining 89% of the data for the training data and explained 66% of the data for the testing data. The mse was also lower for the testing data then the training so this looks good for the model.
+The two best models from the r^2 and mse results are linear regression and lasso regression under the original unaltered data. Lasso under the standard scaler also performed well. The best model is the Lasso regression under the original unaltered data. The r^2 was high at explaining 89% of the data for the training data and explained 66% of the data for the testing data. The mse was also lower for the testing data and the training so this looks good for the model.
 
 Overall, under Lasso regression using the original unaltered data the features used created a model that was good at determining housing prices and could be used by Real Estate or other corperations to evaluate housing prices in the Vancovuer Washington area using housing features and geographic location.
 
